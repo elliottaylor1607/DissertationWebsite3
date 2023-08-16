@@ -1,0 +1,61 @@
+/*This class specifies the height, width, position, z-index, top, left, background-color, overflow-x and transition properties for the navigation bar overlay */
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;  
+	left: 0;
+	background-color: rgba(1,1,26, 0.9);
+	overflow-x: hidden;  
+	transition: 0.5s;  
+}
+
+/*This class specifies the position, top, width and text-align properties for the navigation bar overlay-content */
+.overlay-content {
+	position: relative;
+	top: 20%;
+	width: 100%;
+	text-align: center;
+}
+
+/*This class specifies the padding, text-decoration, font-size, color, display and font-weight properties for the navigation bar active overlay */
+.overlay a {  
+	padding: 8px;
+	text-decoration: none;
+	font-size: 18px;
+	color: #f1f1f1;
+	display: block;  
+	font-weight: bold;
+}
+
+/*This class specifies the border and color properties for when each navigation link is active within the navigation bar.*/
+.active {
+	border: yellow solid 2px; 
+	color: yellow;   
+}
+
+/*This class specifies the color property for the navigation bar active overlay hover */
+.overlay a:hover {
+	color: yellow;
+
+/*This class specifies the position, top, right, font-size, color and text-align properties for the navigation bar close button */	
+.closebtn {
+	position: absolute;
+	top: 10px;
+	right: 30px;
+	font-size: 50px;
+	color: yellow;
+	text-align: right;
+}
+
+/*This class specifies the font-font-family, font-size, text-align, color, cursor, padding and background-color properties for the navigation bar open menu */	
+.omenu{
+	font-family: Georgia;
+	font-size: 24px;
+	text-align: left;
+	color: white;
+	cursor: pointer;
+	padding: 10px;
+	background-color: black;
+}
