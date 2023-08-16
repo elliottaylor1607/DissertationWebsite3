@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!-- Specifying the document type --> 
+<html lang="en"> <!-- Start of webpage's HTML content and specifying language -->
+<head> <!-- Start of webpage's heading content -->
+<title> Colour </title> <!-- Title of the webpage -->
+<link rel="stylesheet" href="css/DissertationNavigationStyleSheet3.css"> <!-- Referencing external CSS -->      
+<link rel="stylesheet" href="css/DissertationLayoutStyleSheet3.css"> <!-- Referencing external CSS -->       
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Giving instructions on how to scale each page of the website when viewed within 
+different web browsers -->
+<meta name="author" content="ET Bedford College"> <!-- Crediting the author of the webpage -->            
+<script> <!-- Start of JavaScript -->  
+/*These functions use document.getElementById to adjust the width of the navigation based on whether each page is maximised or minimised. */    
+	function openMenu() {
+		document.getElementById("myNav").style.width = "100%";
+	}
+	function closeMenu(){
+		document.getElementById("myNav").style.width = "0%";
+	}
+</script> <!-- End of JavaScript -->  
+</head> <!-- End of webpage's heading content -->    
+<body> <!-- Start of webpage's body content -->
+		<div class="title1"> WEBSITE DESIGN FEATURES <!--Start of title1 div -->                
+		</div> <!-- End of title1 div -->
+			<p class="omenu" onclick="openMenu()"> &#9776;</p> <!-- Implementing a function that will display a navigation icon showing the navigation links if 
+			selected with a reference to the icon -->
+				<div class="overlay" id="myNav"> <!-- Start of overlay div -->
+				<a href="javascript:void(0);" class="closeMenu" onclick="closeMenu()">&#10005;</a> <!-- Implementing a function that will display a navigation icon 
+				showing the navigation links if selected when viewed on small screens with a reference to the icon -->  
+					<div class="overlay-content"> <!-- Start of overlay-content div -->
+						<a href="DissertationHome3.html"> HOME </a> <!-- Referencing the hyperlink for the Home page -->
+						<a class="active" href="DissertationColour3.html"> COLOUR </a> <!-- Referencing the hyperlink for the Colour page and highlighting it to 
+						indicate that it's currently active --> 
+						<a href="DissertationNavigationDesign3.html"> NAVIGATION DESIGN </a> <!-- Referencing the hyperlink for the Navigation Design page -->
+						<a href="DissertationTypography3.html"> TYPOGRAPHY </a> <!-- Referencing the hyperlink for the Typography page --> 
+						<a href="DissertationReferences3.html"> REFERENCES </a> <!-- Referencing the hyperlink for the References page -->     
+					</div> <!-- End of overlay-content div --> 
+				</div> <!-- End of overlay div -->
+			<div class="whitespace"> <!-- Start of whitespace div -->
+			</div> <!-- End of whitespace div --> 
+		<div class="dmainbody"> <!-- Start of dmainbody div -->
+			<div class="h1left"> <!-- Start of heading1left div -->   
+				<h1> COLOUR </h1> <!-- Specifying heading1 text within the heading1left div --> 
+			</div> <!-- End of heading1left div -->
+				<div class="p"> <!-- Start of paragraph div --> 
+					<p> Colour is defined as the use of guidlines in mixing colours to produce </br> <!-- Specifying paragraph text -->
+						visually attractive and balanced combinations. </br> </br> <!-- Inserting several line breaks -->
+						Three primary colours exist: magenta, cyan, and yellow, more commonly associated as </br> <!-- Inserting a line break -->
+						red, blue, and yellow. </br> </br> <!-- Inserting several line breaks -->
+						All other colours are combinations of these primary colours, created using varying levels </br> <!-- Inserting a line break -->
+						of brightness, tints, and shades. </br> </br> <!-- Inserting several line breaks -->
+						Colours also possess levels of warmth that define whether they're considered warm or cold 
+						</br> (Grady N, Kirchner R, 2022). <!-- Inserting a line break -->
+				</div> <!-- End of paragraph div --> 
+								<div class="dbox1"> <!-- Start of dbox1 div -->     
+									<img src="Images/ColourIMG1.png" width="290px"> <!-- Specifying the file location and dimensions of the image -->
+								</div> <!-- End of dbox1 div -->
+								<div class="dbox1"> <!-- Start of dbox1 div -->     
+									<iframe width="420" height="345" src="https://www.youtube.com/embed/e_kdWMmD3z0">
+									</iframe> <!-- End of iframe --> 
+								</div> <!-- End of dbox1 div -->
+							</div> <!-- End of dmainbody div -->
+			<div class="footerarea"> <!-- Start of footerarea div -->
+				<div class="h2"> <!-- Start of heading2 div -->  
+					<h2> Designed and developed by Elliot Taylor </br> <!-- Specifying heading2 text and inserting a line break to break up the text -->
+						 Last Updated March 2023 </br> <!-- Continuation of heading2 text and inserting a line break to break up the text -->			
+			</div> <!-- End of heading2 div -->    
+		</div> <!-- End of footerarea div -->
+</body> <!-- End of webpage's body content -->   
+</html> <!-- End of webpage's HTML content -->   

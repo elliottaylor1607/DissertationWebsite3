@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- Specifying the document type --> 
+<html lang="en"> <!-- Start of webpage's HTML content and specifying language -->
+<head> <!-- Start of webpage's heading content -->
+<title> Navigation Design </title> <!-- Title of the webpage -->
+<link rel="stylesheet" href="css/DissertationNavigationStyleSheet3.css"> <!-- Referencing external CSS -->      
+<link rel="stylesheet" href="css/DissertationLayoutStyleSheet3.css"> <!-- Referencing external CSS -->      
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Giving instructions on how to scale each page of the website when viewed within 
+different web browsers -->
+<meta name="author" content="ET Bedford College"> <!-- Crediting the author of the webpage -->            
+<script> <!-- Start of JavaScript -->  
+/*These functions use document.getElementById to adjust the width of the navigation based on whether each page is maximised or minimised. */       
+	function openMenu() {
+		document.getElementById("myNav").style.width = "100%";
+	}
+	function closeMenu(){
+		document.getElementById("myNav").style.width = "0%";
+	}
+</script> <!-- End of JavaScript -->  
+</head> <!-- End of webpage's heading content -->  
+<body> <!-- Start of webpage's body content -->
+		<div class="title1"> WEBSITE DESIGN FEATURES <!--Start of title1 div -->                
+		</div> <!-- End of title1 div -->
+			<p class="omenu" onclick="openMenu()"> &#9776;</p> <!-- Implementing a function that will display a navigation icon showing the navigation links if 
+			selected with a reference to the icon -->
+				<div class="overlay" id="myNav"> <!-- Start of overlay div -->
+				<a href="javascript:void(0);" class="closeMenu" onclick="closeMenu()">&#10005;</a> <!-- Implementing a function that will display a navigation icon 
+				showing the navigation links if selected when viewed on small screens with a reference to the icon -->  
+					<div class="overlay-content"> <!-- Start of overlay-content div -->
+						<a href="DissertationHome3.html"> HOME </a> <!-- Referencing the hyperlink for the Home page -->
+						<a href="DissertationColour3.html"> COLOUR </a> <!-- Referencing the hyperlink for the Colour page -->
+						<a class="active" href="DissertationNavigationDesign3.html"> NAVIGATION DESIGN </a> <!-- Referencing the hyperlink for the Navigation 
+						Design page and highlighting it to indicate that it's currently active --> 
+						<a href="DissertationTypography3.html"> TYPOGRAPHY </a> <!-- Referencing the hyperlink for the Typography page --> 
+						<a href="DissertationReferences3.html"> REFERENCES </a> <!-- Referencing the hyperlink for the References page -->     
+					</div> <!-- End of overlay-content div --> 
+				</div> <!-- End of overlay div -->
+			<div class="whitespace"> <!-- Start of whitespace div -->
+			</div> <!-- End of whitespace div --> 
+		<div class="dmainbody"> <!-- Start of dmainbody div -->
+			<div class="h1left"> <!-- Start of heading1left div -->   
+				<h1> NAVIGATION DESIGN </h1> <!-- Specifying heading1 text within the h1center div --> 
+			</div> <!-- End of heading1left div -->
+				<div class="p"> <!-- Start of paragraph div --> 
+					<p> Navigation design is defined as the discipline of constructing, assessing, and </br> <!-- Specifying paragraph text -->
+						incorporating ways of navigating a website. </br> </br> <!-- Inserting several line breaks -->
+						Effective navigation design should transport users from point A to point B in a </br> <!-- Inserting a line break -->  
+						satisfying way (Costa R, 2020). </br> </br> <!-- Inserting several line breaks -->   
+						Different types of navigation design exist. </br> </br> <!-- Inserting several line breaks -->
+						Horizontal navigation can be used to organise webpage links on a horizontal line. </br> </br> <!-- Inserting several line breaks -->
+						Vertical navigation can be used to organise webpage links down a vertical line. </br> </br> <!-- Inserting several line breaks -->
+						Overlay navigation can be used to display or hide webpage links.   
+				</div> <!-- End of paragraph div --> 
+								<div class="dbox1"> <!-- Start of dbox1 div -->     
+									<img src="Images/NavigationIMG1.jpeg" width="400px"> <!-- Specifying the file location and dimensions of the 
+									image -->
+								</div> <!-- End of dbox1 div -->
+								<div class="dbox1"> <!-- Start of dbox1 div -->          
+									<img src="Images/NavigationIMG2.jpeg" width="400px" height="99px"> <!-- Specifying the file location and dimensions of the 
+									image -->  
+								</div> <!-- End of dbox1 div -->
+								</br>
+								<div class="dbox1"> <!-- Start of dbox1 div -->          
+									<img src="Images/NavigationIMG3.jpeg" width="200px"> <!-- Specifying the file location and dimensions of the image -->
+								</div> <!-- End of dbox1 div -->								
+			<div class="footerarea"> <!-- Start of footerarea div -->
+				<div class="h2"> <!-- Start of heading2 div -->  
+					<h2> Designed and developed by Elliot Taylor </br> <!-- Specifying heading2 text and inserting a line break to break up the text -->
+						 Last Updated March 2023 </br> <!-- Continuation of heading2 text and inserting a line break to break up the text -->			
+			</div> <!-- End of heading2 div -->    
+		</div> <!-- End of footerarea div -->    
+	</div> <!-- End of dmainbody div -->    
+</body> <!-- End of webpage's body content -->     
+</html> <!-- End of webpage's HTML content -->    

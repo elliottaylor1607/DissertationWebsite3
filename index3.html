@@ -1,0 +1,133 @@
+<!DOCTYPE html> <!-- Specifying the document type --> 
+<html lang="en"> <!-- Start of webpage's HTML content and specifying language -->
+<head> <!-- Start of webpage's heading content -->
+<title> Home </title> <!-- Title of the webpage -->
+<link rel="stylesheet" href="css/DissertationNavigationStyleSheet3.css"> <!-- Referencing external CSS -->      
+<link rel="stylesheet" href="css/DissertationLayoutStyleSheet3.css"> <!-- Referencing external CSS -->         
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Giving instructions on how to scale each page of the website when viewed within 
+different web browsers -->
+<meta name="author" content="ET Bedford College"> <!-- Crediting the author of the webpage -->            
+<script> <!-- Start of JavaScript -->  
+/*These functions use document.getElementById to adjust the width of the navigation based on whether each page is maximised or minimised. */    
+	function openMenu() {
+		document.getElementById("myNav").style.width = "100%";
+	}
+	function closeMenu(){
+		document.getElementById("myNav").style.width = "0%";
+	}
+	
+	/*This event contains the function changeImg which when executed will cycle between three different images within five seconds or based on whether 
+the Previous and Next buttons have been selected. */ 
+window.onload=changeImg;
+
+/*Both the var vcount and var aimages variables contain default values, with var vtime containing the duration of five seconds as a value for when each image
+changes within the cycle. */ 
+var vcount = 0;
+var aimages = [];
+var vtime = 5000;   
+
+/*These image arrays contain file locations of different images which are displayed within the automatic slideshow when cycling within five seconds or based
+on whether the Previous and Next buttons have been selected. */
+aimages[0] = "Images/ColourIMG1.png";
+aimages[1] = "Images/TypographyIMG1.png";                  
+
+/*Declaring a function which will change the location of the image held within the aimage array .*/
+function changeImg(){
+	document.slide.src = aimages[vcount];
+	
+	/*If the value held within the image array aimages exceeds the value of the variable vcount then vcount's value will be incremented. */
+	if(vcount < aimages.length - 1){
+	
+	vcount++;
+	}else{
+	
+	/*The value held within the variable vcount will be reset to nothing and the setTimeout function will call the function changeImg after waiting five 
+	seconds. */ 
+	vcount = 0;  
+	}
+	
+	setTimeout("changeImg()", vtime);
+}
+
+/*Declaring a function and assigning it with the value of the incremented variable vcount which will both change the location of the image and 
+allow users to view the next image within the cycle. */
+function fNext(){
+	vcount=vcount++;
+	document.slide.src = aimages[vcount];
+	
+	/*If the value held within the image array aimages exceeds the value of the variable vcount then vcount's value will be incremented. */
+	if(vcount < aimages.length - 1){
+	    
+	vcount++;    
+	}else{
+	
+	/*The value held within the variable vcount will be reset to nothing. */ 
+	vcount = 0; 
+	}
+}
+
+/*Declaring a function and assigning it with the value of the incremented variable vcount which will both change the location of the image and 
+allow users to view the previous image within the cycle. */
+function fPrevious(){
+	vcount=vcount--;
+	document.slide.src = aimages[vcount];
+	if(vcount < aimages.length - 1){   
+	
+	/*If the value held within the image array aimages exceeds the value of the variable vcount then vcount will be incremented. */
+	vcount++;
+	}else{
+		
+		/*If the value assigned to the variable vcount is equal to nothing the setTimeout function will call the function changeImg after waiting 
+		five seconds. */ 
+		vcount = 0;
+	}
+}   
+</script> <!-- End of JavaScript -->  
+</head> <!-- End of webpage's heading content -->  
+<body> <!-- Start of webpage's body content -->
+		<div class="title1"> WEBSITE DESIGN FEATURES <!--Start of title1 div -->                
+		</div> <!-- End of title1 div -->
+			<p class="omenu" onclick="openMenu()"> &#9776;</p> <!-- Implementing a function that will display a navigation icon showing the navigation links if 
+			selected with a reference to the icon -->
+				<div class="overlay" id="myNav"> <!-- Start of overlay div -->
+				<a href="javascript:void(0);" class="closeMenu" onclick="closeMenu()">&#10005;</a> <!-- Implementing a function that will hide the navigation links 
+				with a reference to the icon -->  
+					<div class="overlay-content"> <!-- Start of overlay-content div -->
+						<a class="active" href="DissertationHome3.html"> HOME </a> <!-- Referencing the hyperlink for the Home page and highlighting it to indicate 
+						that it's currently active -->  
+						<a href="DissertationColour3.html"> COLOUR </a> <!-- Referencing the hyperlink for the Colour page -->
+						<a href="DissertationNavigationDesign3.html"> NAVIGATION DESIGN </a> <!-- Referencing the hyperlink for the Navigation Design page -->
+						<a href="DissertationTypography3.html"> TYPOGRAPHY </a> <!-- Referencing the hyperlink for the Typography page -->    
+						<a href="DissertationReferences3.html"> REFERENCES </a> <!-- Referencing the hyperlink for the References page -->     
+					</div> <!-- End of overlay-content div -->
+				</div> <!-- End of overlay div -->
+			<div class="whitespace"> <!-- Start of whitespace div -->
+			</div> <!-- End of whitespace div --> 
+		<div class="dmainbody"> <!-- Start of dmainbody div -->    
+			<div class="h1left"> <!-- Start of heading1left div -->   
+				<h1> WELCOME </h1> <!-- Specifying heading1 text within the heading1left div --> 
+			</div> <!-- End of heading1left div -->
+				<div class="p"> <!-- Start of paragraph div --> 
+					<p> This website aims to educate visitors on website design features. </br> </br> <!-- Specifying paragraph text -->
+						It will achieve this by explaining three of the most common: colour, navigation design </br> <!-- Inserting a line break -->
+						and typography. </br> </br> <!-- Inserting several line breaks -->
+						Each page will consist of information explaining each of the features, in addition to </br> <!-- Inserting a line break -->
+						examples and videos. </br> </br> <!-- Inserting several line breaks -->
+						To navigate the website, select from the links in the navigation.  
+				</div> <!-- End of paragraph div -->   
+							<div class=dbanner> <!-- Start of dbanner div -->  
+								<img name="slide" width="290"/> <br> <!-- Specifying the dimensions of the images held within dbanner -->      
+									<button id="btnfPrevious" onclick="fPrevious()" a href="#" class="button"> PREVIOUS </button> <!-- Referencing the function 
+									fPrevious and assigning it's value to a button which will cycle through each image in the preceeding order -->        
+									<button id="btnfNext" onclick="fNext()" a href="#" class="button"> NEXT </button> <!-- Referencing the function fNext and 
+									assigning its value to a button that will cycle through each image in the suceeding order -->            
+			</div> <!-- End of dbanner -->
+					</div> <!-- End of dmainbody div -->
+			<div class="footerarea"> <!-- Start of footerarea div -->
+				<div class="h2"> <!-- Start of heading2 div -->  
+					<h2> Designed and developed by Elliot Taylor </br> <!-- Specifying heading2 text and inserting a line break to break up the text -->
+						 Last Updated March 2023 </br> <!-- Continuation of heading2 text and inserting a line break to break up the text -->			
+				</div> <!-- End of heading2 div -->    
+			</div> <!-- End of footerarea div -->
+</body> <!-- End of webpage's body content -->
+</html> <!-- End of webpage's HTML content -->   
